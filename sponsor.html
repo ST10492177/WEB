@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sponsor a Youth Program</title>
+</head>
+<body>
+
+  <h1>Support Our Mission</h1>
+  <p>Your sponsorship helps us reach more youth with mentorship, education, and leadership programs.</p>
+
+  <form action="thankyou.html" method="get">
+    <!-- Name -->
+    <label for="name">Full Name / Organization:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Sponsorship Type -->
+    <label for="type">Type of Sponsorship:</label><br>
+    <input type="radio" id="partner" name="type" value="Partnership">
+    <label for="partner">Partnership</label><br>
+
+    <input type="radio" id="one-time" name="type" value="One-Time Sponsor">
+    <label for="one-time">One-Time Sponsor</label><br>
+
+    <input type="radio" id="recurring" name="type" value="Recurring Supporter">
+    <label for="recurring">Recurring Supporter</label><br><br>
+
+    <!-- Amount -->
+    <label for="amount">Sponsorship Amount (optional):</label><br>
+    <input type="text" id="amount" name="amount"><br><br>
+
+    <!-- Message -->
+    <label for="message">Message or Area of Interest:</label><br>
+    <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+    <button type="button" onclick="window.location.href='index.html'">Go to Home Page</button>
+  </form>
+
+</body>
+</html>
