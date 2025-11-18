@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enquiry - BrightSteps Youth Foundation</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <meta name="description" content="Enquire about services, programs, volunteering or sponsorship at BrightSteps.">
+  <meta name="keywords" content="Enquiry, Services, Volunteer, Sponsor">
+  <meta name="author" content="BrightSteps Youth Foundation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/hero.jpg" alt="BrightSteps logo" class="logo">
+      <h1>Make an enquiry</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <form id="enquiryForm" novalidate>
+        <label for="eName">Full name</label>
+        <input type="text" id="eName" name="name" required>
+
+        <label for="eEmail">Email address</label>
+        <input type="email" id="eEmail" name="email" required>
+
+        <label for="eType">Enquiry type</label>
+        <select id="eType" name="type" required>
+          <option value="" selected disabled>Choose one</option>
+          <option value="Service">Service (program details)</option>
+          <option value="Volunteer">Volunteer</option>
+          <option value="Sponsor">Sponsor</option>
+        </select>
+
+        <label for="eDetails">Details</label>
+        <textarea id="eDetails" name="details" rows="4" required placeholder="Tell us more..."></textarea>
+
+        <div class="actions">
+          <button type="submit" class="btn">Calculate response</button>
+          <button type="reset" class="btn btn-outline">Clear</button>
+        </div>
+      </form>
+
+      <div id="enquiryResponse" class="response" hidden>
+        <h3>Response</h3>
+        <p id="responseText"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="copyright">© 2025 BrightSteps Youth Foundation</p>
+  </footer>
+
+</body>
+</html>

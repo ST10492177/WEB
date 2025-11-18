@@ -2,46 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sponsor a Youth Program</title>
+  <title>Sponsor - BrightSteps Youth Foundation</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <meta name="description" content="Support BrightSteps programs through sponsorship: partnership, one-time, or recurring.">
+  <meta name="keywords" content="Sponsor, Donation, Partnership, Youth Programs">
+  <meta name="author" content="BrightSteps Youth Foundation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <h1>Support Our Mission</h1>
-  <p>Your sponsorship helps us reach more youth with mentorship, education, and leadership programs.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <form action="thankyou.html" method="get">
-    <!-- Name -->
-    <label for="name">Full Name / Organization:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/hero.jpg" alt="BrightSteps logo" class="logo">
+      <h1>Support our mission</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="sponsor.html" class="active" aria-current="page">Sponsor</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Email -->
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <main id="main">
+    <section>
+      <p>Your sponsorship helps us reach more youth with mentorship, education, and leadership programs.</p>
+      <form id="sponsorForm" novalidate>
+        <label for="sName">Full name / organisation</label>
+        <input type="text" id="sName" name="name" required>
 
-    <!-- Sponsorship Type -->
-    <label for="type">Type of Sponsorship:</label><br>
-    <input type="radio" id="partner" name="type" value="Partnership">
-    <label for="partner">Partnership</label><br>
+        <label for="sEmail">Email address</label>
+        <input type="email" id="sEmail" name="email" required>
 
-    <input type="radio" id="one-time" name="type" value="One-Time Sponsor">
-    <label for="one-time">One-Time Sponsor</label><br>
+        <fieldset>
+          <legend>Type of sponsorship</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="type" value="Partnership" required> Partnership</label>
+            <label><input type="radio" name="type" value="One-Time Sponsor"> One-time sponsor</label>
+            <label><input type="radio" name="type" value="Recurring Supporter"> Recurring supporter</label>
+          </div>
+        </fieldset>
 
-    <input type="radio" id="recurring" name="type" value="Recurring Supporter">
-    <label for="recurring">Recurring Supporter</label><br><br>
+        <label for="sAmount">Sponsorship amount (optional)</label>
+        <input type="number" id="sAmount" name="amount" min="0" step="100">
 
-    <!-- Amount -->
-    <label for="amount">Sponsorship Amount (optional):</label><br>
-    <input type="text" id="amount" name="amount"><br><br>
+        <label for="sMessage">Message or area of interest</label>
+        <textarea id="sMessage" name="message" rows="4"></textarea>
 
-    <!-- Message -->
-    <label for="message">Message or Area of Interest:</label><br>
-    <textarea id="message" name="message" rows="4"></textarea><br><br>
+        <div class="actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="reset" class="btn btn-outline">Clear</button>
+          <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">Go to home</button>
+        </div>
+        <p id="sponsorSuccess" class="success" hidden>Thank you! Your sponsorship interest has been received.</p>
+      </form>
+    </section>
+  </main>
 
-    <!-- Buttons -->
-    <input type="submit" value="Send">
-    <input type="reset" value="Clear">
-    <button type="button" onclick="window.location.href='index.html'">Go to Home Page</button>
-  </form>
+  <footer class="site-footer">
+    <p class="copyright">© 2025 BrightSteps Youth Foundation</p>
+  </footer>
 
 </body>
 </html>

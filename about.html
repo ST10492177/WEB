@@ -2,34 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us - BrightSteps Youth Foundation</title>
+  <title>About us - BrightSteps Youth Foundation</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <meta name="description" content="Learn about BrightSteps: mission, vision, story, and team.">
+  <meta name="keywords" content="BrightSteps, Mission, Vision, Team">
+  <meta name="author" content="BrightSteps Youth Foundation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <header>
-    <h1>About BrightSteps Youth Foundation</h1>
-    <!-- Navigation link to homepage -->
-    <nav>
-      <a href="index.html" style="text-decoration:none; font-weight:bold; color:#007BFF;">← Go Home</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/hero.jpg" alt="BrightSteps logo" class="logo">
+      <h1>About BrightSteps</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
+    <section class="wide">
+      <img src="images/outreach.jpg" alt="BrightSteps community outreach" class="responsive-img">
+    </section>
+
     <section>
-      <!-- Added image for professional visual enhancement -->
-      <img src="images/outreach.jpg" alt="BrightSteps Youth in Community Outreach" width="100%" style="max-width:600px; display:block; margin:auto; border-radius:8px;">
+      <h2>Mission</h2>
+      <p>To empower youth through education, mentorship, and opportunity.</p>
+    </section>
 
-      <!-- Original content remains untouched -->
-      <p>
-        BrightSteps Youth Foundation was founded to uplift and empower young people in underserved communities across South Africa. 
-        Our mission is to provide mentorship, leadership training, and community engagement opportunities that inspire growth and resilience.
-      </p>
+    <section>
+      <h2>Vision</h2>
+      <p>A future where every young person has the tools to succeed, regardless of background.</p>
+    </section>
 
-      <p>
-        Through our programs, we aim to build a generation of confident, capable youth who are ready to lead and make a positive impact in their communities.
-      </p>
+    <section>
+      <h2>Our story</h2>
+      <p>Founded in 2015, BrightSteps has grown into a network of volunteers, educators, and partners committed to uplifting youth across South Africa.</p>
+    </section>
+
+    <section>
+      <h2>Team</h2>
+      <ul class="team">
+        <li><strong>Program Lead:</strong> Thandi M.</li>
+        <li><strong>Volunteer Coordinator:</strong> Sipho K.</li>
+        <li><strong>Partnerships:</strong> Lerato P.</li>
+      </ul>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p class="copyright">© 2025 BrightSteps Youth Foundation</p>
+  </footer>
 
 </body>
 </html>

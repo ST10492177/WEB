@@ -3,72 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <title>BrightSteps Youth Foundation</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <meta name="description" content="BrightSteps empowers South African youth through mentorship, education, and leadership programs.">
+  <meta name="keywords" content="BrightSteps, Youth Foundation, Mentorship, Education, Volunteer, Sponsor">
+  <meta name="author" content="BrightSteps Youth Foundation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <!-- Logo image added above the site title -->
-    <img src="images/hero.jpg" alt="BrightSteps Logo" width="150" style="display:block; margin:auto; border-radius:8px;">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h1>BrightSteps Youth Foundation</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/hero.jpg" alt="BrightSteps logo" class="logo">
+      <h1>BrightSteps Youth Foundation</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+      <ul id="navList">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="about.html">About us</a></li>
         <li><a href="programs.html">Programs</a></li>
         <li><a href="volunteer.html">Volunteer</a></li>
         <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <main>
-    <section>
-      <h2>Empowering Youth, Building Futures</h2>
-      <p>BrightSteps Youth Foundation is a South African nonprofit dedicated to uplifting young people through mentorship, education, and leadership development. We believe every youth deserves the opportunity to thrive and lead with purpose.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Empowering youth, building futures</h2>
+        <p>We uplift young people through mentorship, education, and leadership development across South Africa.</p>
+        <div class="hero-actions">
+          <a href="volunteer.html" class="btn">Become a volunteer</a>
+          <a href="sponsor.html" class="btn btn-outline">Sponsor a program</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Impact Section -->
-    <section>
-      <h2>Our Impact</h2>
-      <ul>
-        <li>🎓 Over 1,000 youth mentored since 2015</li>
-        <li>📚 Career guidance workshops in 12 communities</li>
-        <li>🌍 Outreach programs reaching rural and urban areas</li>
+    <section class="impact">
+      <h2>Our impact</h2>
+      <ul class="stats">
+        <li><span class="stat-number">1,000+</span> youth mentored since 2015</li>
+        <li><span class="stat-number">12</span> communities reached</li>
+        <li><span class="stat-number">20+</span> outreach events yearly</li>
       </ul>
     </section>
 
-    <!-- Get Involved -->
-    <section>
-      <h2>Get Involved</h2>
-      <p>Join us in shaping a brighter future. Whether you're a volunteer, donor, or partner, your support makes a difference.</p>
-      <ul>
-        <li><a href="volunteer.html">Become a Volunteer</a></li>
-        <li><a href="sponsor.html">Sponsor a Program</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </section>
-
-    <!-- Programs Preview -->
-    <section>
-      <h2>Featured Programs</h2>
-      <ul>
-        <li><strong>Mentorship Program:</strong> Personalized guidance for high school learners</li>
-        <li><strong>Career Workshops:</strong> Skills training and career exposure</li>
-        <li><strong>Community Outreach:</strong> Events that foster leadership and civic engagement</li>
-      </ul>
-      <p><a href="programs.html">Explore All Programs</a></p>
+    <section class="featured-programs">
+      <h2>Featured programs</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/mentorship.jpg" alt="Mentor guiding a learner" class="card-img">
+          <h3>Mentorship</h3>
+          <p>Personalized guidance for learners to build confidence and set goals.</p>
+        </article>
+        <article class="card">
+          <img src="images/workshop.jpg" alt="Career workshop in session" class="card-img">
+          <h3>Career workshops</h3>
+          <p>Interactive sessions introducing youth to pathways and essential job skills.</p>
+        </article>
+        <article class="card">
+          <img src="images/outreach.jpg" alt="Community outreach event" class="card-img">
+          <h3>Community outreach</h3>
+          <p>Leadership and civic engagement initiatives in local communities.</p>
+        </article>
+      </div>
+      <p class="center"><a href="programs.html" class="btn">Explore all programs</a></p>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>📍 Johannesburg, South Africa</p>
-    <p>📧 Email: info@brightsteps.org</p>
-    <p>© 2025 BrightSteps Youth Foundation</p>
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Johannesburg, South Africa</p>
+        <p><a href="mailto:info@brightsteps.org">info@brightsteps.org</a></p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="sponsor.html">Sponsor</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter/X</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2025 BrightSteps Youth Foundation</p>
   </footer>
 
 </body>
